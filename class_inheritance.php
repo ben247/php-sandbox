@@ -1,25 +1,25 @@
 <?php
 
-class User {
+class Fly {
 
-    var $first_name;
-    var $last_name;
-    var $username;
+    var $name;
+    var $size;
+    var $hook;
 
-    function full_name() {
-        return $this->first_name . " " . $this->last_name;
+    function fly_description() {
+        return $this->name . " , " . $this->size . " , ";
         }
 }
 
-class Customer extends User {
+class Salmon extends Fly {
 }
 
-$u = new User;
+$u = new Fly;
 $u->first_name = 'Jerry';
 $u->last_name = 'Seinfeld';
 $u->username = 'jseinfled';
 
-$c = new Customer;
+$c = new Salmon;
 $c->first_name = 'George';
 $c->last_name = 'Costanza';
 $c->username = 'gcostanza';
