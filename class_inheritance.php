@@ -14,7 +14,10 @@ class Fly {
 class Salmon extends Fly {
 }
 
-
+$u = new Fly;
+$u->first_name = 'Jerry';
+$u->last_name = 'Seinfeld';
+$u->username = 'jseinfled';
 
 $c = new Salmon;
 $c->first_name = 'George';
