@@ -26,6 +26,25 @@ class Bicycle
         5 => 'Like New'
     ];
 
+// Define the __construct method
+
+    public function __construct($args = [])
+    {
+        // Define the method properties
+        // null coalescing operator (??)
+        $this->brand = $args['brand'] ?? '';
+        $this->model = $args['model'] ?? '';
+        $this->year = $args['year'] ?? '';
+        $this->category = $args['category'] ?? '';
+        $this->colour = $args['colour'] ?? '';
+        $this->description = $args['description'] ?? '';
+        $this->gender = $args['gender'] ?? '';
+        $this->price = $args['price'] ?? '';
+        $this->weight_kg = $args['weight_kg'] ?? 0.0;
+        $this->condition_id = $args['condition_id'] ?? 3;
+    }
+
+
 
 
 }
