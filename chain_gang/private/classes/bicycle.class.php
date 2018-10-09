@@ -37,7 +37,7 @@ class Bicycle
         $this->model = $args['model'] ?? '';
         $this->year = $args['year'] ?? '';
         $this->category = $args['category'] ?? '';
-        $this->colour = $args['colour'] ?? '';
+        $this->color = $args['color'] ?? '';
         $this->description = $args['description'] ?? '';
         $this->gender = $args['gender'] ?? '';
         $this->price = $args['price'] ?? 0;
