@@ -11,6 +11,7 @@ class Bicycle
     public $colour;
     public $description;
     public $gender;
+    public $price;
     protected $weight_kg;
     protected $condition_id;
 // Define the class constants
@@ -39,14 +40,14 @@ class Bicycle
         $this->colour = $args['colour'] ?? '';
         $this->description = $args['description'] ?? '';
         $this->gender = $args['gender'] ?? '';
-        $this->price = $args['price'] ?? '';
+        $this->price = $args['price'] ?? 0;
         $this->weight_kg = $args['weight_kg'] ?? 0.0;
         $this->condition_id = $args['condition_id'] ?? 3;
     }
 
     public function weight_kg()
     {
-        return number_format($this->weight_kg, 2) . 'kg';
+        return number_format($this->weight_kg, 2) . ' kg';
     }
 
     public function set_weight_kg($value)
@@ -57,7 +58,7 @@ class Bicycle
     public function weight_lbs()
     {
         $weight_lbs = floatval($this->weight_kg) * 2.2046226218;
-        return number_format(weight_lbs, 2) . 'lbs';
+        return number_format($weight_lbs, 2) . ' lbs';
     }
 
     public function set_weight_lbs($value)

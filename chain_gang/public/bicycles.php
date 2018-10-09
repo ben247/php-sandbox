@@ -45,7 +45,7 @@
         <td><?php echo h($bike->colour); ?></td>
         <td><?php echo h($bike->weight_kg()) . ' / ' . h($bike->weight_lbs()); ?></td>
         <td><?php echo h($bike->condition()); ?></td>
-        <td><?php echo h(number_format('$', $bike->price)); ?></td>
+        <td><?php echo h("$" . number_format($bike->price)); ?></td>
       </tr>
 <?php 
 } ?>
