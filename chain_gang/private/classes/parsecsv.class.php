@@ -24,9 +24,9 @@ class ParseCSV
                 continue;
             }
             if (!$this->header) {
-                $$this->header = $row;
+                $this->header = $row;
             } else {
-                $this->data[] = array_combine($this->header . $row);
+                $this->data[] = array_combine($this->header, $row);
             }
         }
 

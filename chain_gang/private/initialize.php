@@ -28,6 +28,8 @@ require_once('functions.php');
 
 require_once('classes/bicycle.class.php');
 
+require_once('classes/parsecsv.class.php');
+
   // Load all classes in directory
 
 // foreach (glob('classes/*.class.php') as $file) {
